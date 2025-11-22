@@ -18,8 +18,8 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/docs', docRoutes);
 
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/realtime_collab';
-const JWT_SECRET = process.env.JWT_SECRET || 'replace_this_with_a_secret';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://vishakhamourya508_db_user:gH4zfZMbC5exMo7E@cluster0.bvpusse.mongodb.net/?appName=Cluster0';
+const JWT_SECRET = process.env.JWT_SECRET || 'vish123';
 
 mongoose.connect(MONGO_URI).then(()=>console.log('Mongo connected')).catch(e=>console.error(e));
 
