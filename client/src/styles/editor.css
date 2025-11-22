@@ -1,0 +1,193 @@
+/* -------- DARK MODE BASE -------- */
+body {
+  background: #0b0b0d !important;
+  color: #e6e6e6;
+  font-family: "Inter", sans-serif;
+}
+
+/* Main layout */
+.editor-container {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  min-height: 100vh;
+  background: #0b0b0d;
+}
+
+/* -------- LEFT PANEL (NOW WHITE) -------- */
+.editor-left {
+  flex: 1;
+  background: #ffffff;              /* WHITE */
+  color: #000000;                   /* black text */
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 0 18px rgba(0,0,0,0.3);
+}
+
+/* Top section */
+.editor-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-input {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 12px;
+  width: 360px;
+  background: #f1f1f1;              /* soft gray for white theme */
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  color: #000;
+  outline: none;
+  transition: 0.2s;
+}
+
+.title-input:focus {
+  border-color: #5a8eff;
+  box-shadow: 0 0 0 3px rgba(90,142,255,0.2);
+}
+
+.role-badge {
+  background: #e5e7eb;
+  padding: 6px 12px;
+  border-radius: 10px;
+  color: #111;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 14px;
+  background: #5a8eff;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: #3f6bdd;
+}
+
+.btn-danger {
+  background: #ff4d4d;
+}
+
+.btn-danger:hover {
+  background: #d63a3a;
+}
+
+/* Editor */
+.text-editor {
+  width: 100%;
+  height: 70vh;
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid #2c2c33;
+  border-radius: 12px;
+  font-size: 16px;
+  background: #1a1a20;      /* stays dark */
+  color: #ffffff;
+  outline: none;
+  resize: none;
+  transition: 0.2s;
+}
+
+.text-editor:focus {
+  border-color: #5a8eff;
+  box-shadow: 0 0 0 3px rgba(90,142,255,0.2);
+}
+
+/* -------- RIGHT PANEL (NOW WHITE) -------- */
+.editor-right {
+  width: 300px;
+  background: #ffffff;              /* WHITE */
+  color: #000000;                   /* black text */
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 0 18px rgba(0,0,0,0.3);
+}
+
+.editor-right h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  border-bottom: 2px solid #d6d6d6;
+  padding-bottom: 4px;
+  color: #111;
+}
+
+/* Lists */
+.list-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-box li {
+  padding: 6px 0;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #cfcfcf;
+  color: #000;
+}
+
+.list-box button {
+  background: transparent;
+  padding: 4px 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  border: 1px solid #ff7b7b;
+  color: #d63a3a;
+}
+
+.list-box button:hover {
+  background: #ffe5e5;
+}
+
+/* Invite box */
+.invite-box {
+  margin-top: 12px;
+  display: flex;
+  gap: 6px;
+}
+
+.invite-box input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #c5c5c5;
+  background: #f1f1f1;
+  color: #000;
+}
+
+.invite-box button {
+  padding: 8px 12px;
+}
+
+/* Info box */
+.info-box {
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 14px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  color: #333;
+}
+
+/* -------- ACTIVE COLLABORATORS — ONLY NAME WHITE -------- */
+.active-users li {
+  color: #ffffff !important;     /* Name = white */
+  font-weight: 600;
+}
+
+.active-users li .role {
+  color: #9f9f9f !important;     /* Role stays gray */
+  font-weight: 400;
+}
